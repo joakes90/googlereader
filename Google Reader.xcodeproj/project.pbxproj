@@ -14,6 +14,13 @@
 		D0E1D5261B6AE51C00DE6B9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E1D5251B6AE51C00DE6B9B /* Images.xcassets */; };
 		D0E1D5291B6AE51C00DE6B9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E1D5271B6AE51C00DE6B9B /* LaunchScreen.xib */; };
 		D0E1D5351B6AE51C00DE6B9B /* Google_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5341B6AE51C00DE6B9B /* Google_ReaderTests.m */; };
+		D0E1D5411B6AE56A00DE6B9B /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5401B6AE56A00DE6B9B /* Stack.m */; };
+		D0E1D5441B6AE59E00DE6B9B /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5421B6AE59E00DE6B9B /* Model.xcdatamodeld */; };
+		D0E1D5471B6AE64D00DE6B9B /* StoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5461B6AE64D00DE6B9B /* StoryManager.m */; };
+		D0E1D54E1B6AFB1C00DE6B9B /* StoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D54D1B6AFB1C00DE6B9B /* StoryTableViewCell.m */; };
+		D0E1D5511B6B094B00DE6B9B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5501B6B094B00DE6B9B /* DetailViewController.m */; };
+		D0E1D5541B6BD77400DE6B9B /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5531B6BD77400DE6B9B /* Story.m */; };
+		D0E1D5571B6BE5CB00DE6B9B /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1D5561B6BE5CB00DE6B9B /* AppearanceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,20 @@
 		D0E1D52E1B6AE51C00DE6B9B /* Google ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Google ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E1D5331B6AE51C00DE6B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E1D5341B6AE51C00DE6B9B /* Google_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Google_ReaderTests.m; sourceTree = "<group>"; };
+		D0E1D53F1B6AE56A00DE6B9B /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		D0E1D5401B6AE56A00DE6B9B /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		D0E1D5431B6AE59E00DE6B9B /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D0E1D5451B6AE64D00DE6B9B /* StoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryManager.h; sourceTree = "<group>"; };
+		D0E1D5461B6AE64D00DE6B9B /* StoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryManager.m; sourceTree = "<group>"; };
+		D0E1D54C1B6AFB1C00DE6B9B /* StoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTableViewCell.h; sourceTree = "<group>"; };
+		D0E1D54D1B6AFB1C00DE6B9B /* StoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableViewCell.m; sourceTree = "<group>"; };
+		D0E1D54F1B6B094B00DE6B9B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D0E1D5501B6B094B00DE6B9B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D0E1D5521B6BD77400DE6B9B /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		D0E1D5531B6BD77400DE6B9B /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		D0E1D5551B6BE5CB00DE6B9B /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceController.h; sourceTree = "<group>"; };
+		D0E1D5561B6BE5CB00DE6B9B /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceController.m; sourceTree = "<group>"; };
+		D0E1D5581B6BE87C00DE6B9B /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +102,10 @@
 		D0E1D5171B6AE51C00DE6B9B /* Google Reader */ = {
 			isa = PBXGroup;
 			children = (
+				D0E1D54B1B6AF83500DE6B9B /* View classes */,
+				D0E1D53E1B6AE52F00DE6B9B /* XML Parsing classes */,
 				D0E1D51C1B6AE51C00DE6B9B /* AppDelegate.h */,
 				D0E1D51D1B6AE51C00DE6B9B /* AppDelegate.m */,
-				D0E1D51F1B6AE51C00DE6B9B /* ViewController.h */,
-				D0E1D5201B6AE51C00DE6B9B /* ViewController.m */,
 				D0E1D5221B6AE51C00DE6B9B /* Main.storyboard */,
 				D0E1D5251B6AE51C00DE6B9B /* Images.xcassets */,
 				D0E1D5271B6AE51C00DE6B9B /* LaunchScreen.xib */,
@@ -96,6 +117,7 @@
 		D0E1D5181B6AE51C00DE6B9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0E1D5581B6BE87C00DE6B9B /* SF-UI-Display-Light.otf */,
 				D0E1D5191B6AE51C00DE6B9B /* Info.plist */,
 				D0E1D51A1B6AE51C00DE6B9B /* main.m */,
 			);
@@ -117,6 +139,35 @@
 				D0E1D5331B6AE51C00DE6B9B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E1D53E1B6AE52F00DE6B9B /* XML Parsing classes */ = {
+			isa = PBXGroup;
+			children = (
+				D0E1D5551B6BE5CB00DE6B9B /* AppearanceController.h */,
+				D0E1D5561B6BE5CB00DE6B9B /* AppearanceController.m */,
+				D0E1D5521B6BD77400DE6B9B /* Story.h */,
+				D0E1D5531B6BD77400DE6B9B /* Story.m */,
+				D0E1D53F1B6AE56A00DE6B9B /* Stack.h */,
+				D0E1D5401B6AE56A00DE6B9B /* Stack.m */,
+				D0E1D5421B6AE59E00DE6B9B /* Model.xcdatamodeld */,
+				D0E1D5451B6AE64D00DE6B9B /* StoryManager.h */,
+				D0E1D5461B6AE64D00DE6B9B /* StoryManager.m */,
+			);
+			name = "XML Parsing classes";
+			sourceTree = "<group>";
+		};
+		D0E1D54B1B6AF83500DE6B9B /* View classes */ = {
+			isa = PBXGroup;
+			children = (
+				D0E1D51F1B6AE51C00DE6B9B /* ViewController.h */,
+				D0E1D5201B6AE51C00DE6B9B /* ViewController.m */,
+				D0E1D54C1B6AFB1C00DE6B9B /* StoryTableViewCell.h */,
+				D0E1D54D1B6AFB1C00DE6B9B /* StoryTableViewCell.m */,
+				D0E1D54F1B6B094B00DE6B9B /* DetailViewController.h */,
+				D0E1D5501B6B094B00DE6B9B /* DetailViewController.m */,
+			);
+			name = "View classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E1D5411B6AE56A00DE6B9B /* Stack.m in Sources */,
+				D0E1D5571B6BE5CB00DE6B9B /* AppearanceController.m in Sources */,
 				D0E1D5211B6AE51C00DE6B9B /* ViewController.m in Sources */,
+				D0E1D5511B6B094B00DE6B9B /* DetailViewController.m in Sources */,
+				D0E1D5541B6BD77400DE6B9B /* Story.m in Sources */,
+				D0E1D5441B6AE59E00DE6B9B /* Model.xcdatamodeld in Sources */,
+				D0E1D54E1B6AFB1C00DE6B9B /* StoryTableViewCell.m in Sources */,
 				D0E1D51E1B6AE51C00DE6B9B /* AppDelegate.m in Sources */,
 				D0E1D51B1B6AE51C00DE6B9B /* main.m in Sources */,
+				D0E1D5471B6AE64D00DE6B9B /* StoryManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +484,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0E1D5421B6AE59E00DE6B9B /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0E1D5431B6AE59E00DE6B9B /* Model.xcdatamodel */,
+			);
+			currentVersion = D0E1D5431B6AE59E00DE6B9B /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0E1D50D1B6AE51C00DE6B9B /* Project object */;
 }

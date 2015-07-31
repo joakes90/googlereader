@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "StoryManager.h"
+#import "AppearanceController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [AppearanceController updateAppearance];
+//    [[StoryManager sharedInstance] parseForNewContent];
     return YES;
 }
 
