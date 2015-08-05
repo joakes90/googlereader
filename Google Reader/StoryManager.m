@@ -93,6 +93,7 @@ NSString *kNotificationName = @"storiesUpdated";
             self.Story.destinationText = articalString;
         }
     }else if ([elementName isEqualToString:@"rss"]){
+
         [[Stack sharedInstance].managedObjectContext save:nil];
         NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:kEntityName];
         self.Stories = [NSMutableArray arrayWithArray:[[Stack sharedInstance].managedObjectContext executeFetchRequest:request error:nil]];

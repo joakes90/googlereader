@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "StoryManager.h"
+#import "Stack.h"
+#import "Story.h"
 
 @interface Google_ReaderTests : XCTestCase
 
@@ -17,24 +20,27 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(StoriesAreSuccessfulyBeingSaved) name:@"storiesUpdated" object:nil];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)StoriesAreSuccessfulyBeingSaved {
+    if ([[StoryManager sharedInstance].Stories count] > 0) {
+        NSLog(@"Stories are saved");
+    }
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
+
+-(void)testParsingForNewStoriesPerformance {
     [self measureBlock:^{
-        // Put the code you want to measure the time of here.
+        [[StoryManager sharedInstance] parseForNewContent];
     }];
 }
+
+
 
 @end

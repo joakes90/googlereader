@@ -51,6 +51,11 @@
                BlueprintName = "Google ReaderTests"
                ReferencedContainer = "container:Google Reader.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "Google_ReaderTests/testStoriesAreSuccessfulyBeingSaved">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
