@@ -14,6 +14,7 @@
 
 @interface Google_ReaderTests : XCTestCase
 
+@property (assign, nonatomic) BOOL StoriesSaved;
 @end
 
 @implementation Google_ReaderTests
@@ -30,7 +31,7 @@
 
 - (void)StoriesAreSuccessfulyBeingSaved {
     if ([[StoryManager sharedInstance].Stories count] > 0) {
-        NSLog(@"Stories are saved");
+        self.StoriesSaved = YES;
     }
 }
 
@@ -41,6 +42,12 @@
     }];
 }
 
+-(void)testStoriesAreBeingSaved {
+    if ([[StoryManager sharedInstance].Stories count] > 0) {
+        self.StoriesSaved = YES;
+    }
+    XCTAssertEqual(self.StoriesSaved, YES);
+}
 
 
 @end
