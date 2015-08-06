@@ -14,14 +14,12 @@
 
 @interface Google_ReaderTests : XCTestCase
 
-@property (assign, nonatomic) BOOL StoriesSaved;
 @end
 
 @implementation Google_ReaderTests
 
 - (void)setUp {
     [super setUp];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(StoriesAreSuccessfulyBeingSaved) name:@"storiesUpdated" object:nil];
 }
 
 - (void)tearDown {
@@ -29,11 +27,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)StoriesAreSuccessfulyBeingSaved {
-    if ([[StoryManager sharedInstance].Stories count] > 0) {
-        self.StoriesSaved = YES;
-    }
-}
 
 
 -(void)testParsingForNewStoriesPerformance {
@@ -43,10 +36,8 @@
 }
 
 -(void)testStoriesAreBeingSaved {
-    if ([[StoryManager sharedInstance].Stories count] > 0) {
-        self.StoriesSaved = YES;
-    }
-    XCTAssertEqual(self.StoriesSaved, YES);
+    
+    XCTAssert([[StoryManager sharedInstance].Stories count] > 0);
 }
 
 
